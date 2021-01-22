@@ -8,7 +8,8 @@ namespace LabCMS.TestReportDomain.UnitTest
 {
     public class TestClassSampleCompose
     {
-        public string TestHeader { get; set; } = "TestHeader";
+        public string TestHeader { get; set; } = "Hello Compose";
         public TestClassSample TestClassSample { get; set; } = new();
+        public TestClassSample ABC {get;set;} = new();
     }
 }
