@@ -3,9 +3,9 @@ using System;
 namespace LabCMS.TestReportDomain.Shared
 {
     [AttributeUsage(AttributeTargets.Property)]
-    public class StringFormatAttribute:Attribute
+    public class BindingStringFormatAttribute:Attribute
     {
         public string Format {get;}
-        public StringFormatAttribute(string format)=>Format = format;
+        public BindingStringFormatAttribute(string format)=>Format = format;
     }
 }

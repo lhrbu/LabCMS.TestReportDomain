@@ -7,19 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="template1.docx" />
-    <None Remove="template2.docx" />
-    <None Remove="template3.docx" />
+    <None Remove="BindingMapperDoc.docx" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="template1.docx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="template2.docx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="template3.docx">
+    <Content Include="BindingMapperDoc.docx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -39,10 +31,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LabCMS.TestReportDomain.Shared\LabCMS.TestReportDomain.Shared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="template1.docx" />
   </ItemGroup>
 
 </Project>
