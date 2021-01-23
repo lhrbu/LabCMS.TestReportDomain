@@ -32,7 +32,8 @@ namespace LabCMS.TestReportDomain.Server
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "LabCMS.TestReportDomain.Server", Version = "v1" });
             });
-            //services.AddTransient<DatabaseAccessService>();
+            services.AddTransient<DatabaseAccessService>();
+            services.AddSingleton<EntityTypeLoader>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

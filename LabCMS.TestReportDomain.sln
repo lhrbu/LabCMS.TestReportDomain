@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabCMS.TestReportDomain.Server", "LabCMS.TestReportDomain.Server\LabCMS.TestReportDomain.Server.csproj", "{5D106266-9A7C-4043-9B50-FF3665484E2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabCMS.TestReportDomain.Server", "LabCMS.TestReportDomain.Server\LabCMS.TestReportDomain.Server.csproj", "{5D106266-9A7C-4043-9B50-FF3665484E2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabCMS.TestReportDomain.Shared", "LabCMS.TestReportDomain.Shared\LabCMS.TestReportDomain.Shared.csproj", "{17A2799D-45EA-4A03-B690-9C4CC3D4BDD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabCMS.TestReportDomain.Shared", "LabCMS.TestReportDomain.Shared\LabCMS.TestReportDomain.Shared.csproj", "{17A2799D-45EA-4A03-B690-9C4CC3D4BDD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabCMS.TestReportDomain.UnitTest", "LabCMS.TestReportDomain.UnitTest\LabCMS.TestReportDomain.UnitTest.csproj", "{E0F89D2E-1415-49A7-9CA9-1985736996D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabCMS.TestReportDomain.UnitTest", "LabCMS.TestReportDomain.UnitTest\LabCMS.TestReportDomain.UnitTest.csproj", "{E0F89D2E-1415-49A7-9CA9-1985736996D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabCMS.TestReportDomain.EntityAssemblySample", "LabCMS.TestReportDomain.EntityAssemblySample\LabCMS.TestReportDomain.EntityAssemblySample.csproj", "{146FDFF2-2AC4-4CB0-ACE0-042396A9B383}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{E0F89D2E-1415-49A7-9CA9-1985736996D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0F89D2E-1415-49A7-9CA9-1985736996D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0F89D2E-1415-49A7-9CA9-1985736996D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{146FDFF2-2AC4-4CB0-ACE0-042396A9B383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146FDFF2-2AC4-4CB0-ACE0-042396A9B383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146FDFF2-2AC4-4CB0-ACE0-042396A9B383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146FDFF2-2AC4-4CB0-ACE0-042396A9B383}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

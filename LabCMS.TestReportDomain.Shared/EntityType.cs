@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace LabCMS.TestReportDomain.Shared
 {
-    public class DynamicType
+    public class EntityType
     {
+        public string TableName { get; set; } = null!;
         public string Namespace { get; set; } = null!;
         public string Name { get; set; } = null!;
         public string FullName => $"{Namespace}.{Name}";
-        public string Path { get; set; } = null!;
+        public string AssemblyPath { get; set; } = null!;
     }
 }

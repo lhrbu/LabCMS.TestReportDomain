@@ -25,7 +25,7 @@ namespace LabCMS.TestReportDomain.Server.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
-        private readonly DatabaseAccessService _dbService;
+        private readonly ArchiveDatabaseAccessService _dbService;
         private readonly IConfiguration _configuration;
 
         public WeatherForecastController(
@@ -40,8 +40,9 @@ namespace LabCMS.TestReportDomain.Server.Controllers
         [HttpGet]
         public async ValueTask<IEnumerable<WeatherForecast>> Get()
         {
-            Project project = new();
-            await _dbService.InsertAsync(project, "projects");
+            Project project = new() { no=Guid.NewGuid().ToString(),name_in_fin=Guid.NewGuid().ToString(),
+                name=Guid.NewGuid().ToString()};
+            await _dbService.InsertAsync("projects",project);
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
@@ -54,6 +55,19 @@ namespace LabCMS.TestReportDomain.Server.Controllers
 
         [HttpGet("test")]
         public async ValueTask<IEnumerable<dynamic>> Test()=>
-            await _dbService.GetAllAsync( "usage_records");
+            await _dbService.DynamicGetAllAsync( "usage_records");
+
+        [HttpGet("testupdate")]
+        public async ValueTask TestUpDate()
+        {
+            Project updatingProject = new()
+            {
+                no = "1394E.X00001",
+                name = "Project_1_Updated",
+                name_in_fin= "Project_1_FIN"
+            };
+            await _dbService.UpdateAsync("projects", updatingProject,
+                "no", "1394E.X00001");
+        }
     }
 }
